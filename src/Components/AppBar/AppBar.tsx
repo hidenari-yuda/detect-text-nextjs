@@ -172,7 +172,7 @@ export const AppBarAndDrawer: React.FC<Props> = ({ children }) => {
                       cursor: 'pointer',
                     }}
                   >
-                    RecHubの使い方
+                    使い方
                     <LaunchOutlinedIcon sx={{ fontSize: '16px' }} />
                   </Link>
                 </ListItem>
