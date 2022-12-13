@@ -103,3 +103,9 @@ export const userNameAndPassSchema: Resolver<UserNameAndPassInputs> =
       password: password.adminPassword,
     })
   )
+
+export type UserInputs = {
+  name: string
+  email: string
+  password: string
+}

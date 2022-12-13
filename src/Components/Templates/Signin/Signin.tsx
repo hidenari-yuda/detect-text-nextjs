@@ -1,6 +1,5 @@
 import { FC, useCallback, useContext } from 'react'
 import styled from 'styled-components'
-import { useForm } from 'react-hook-form'
 import { FontWeight, FontSize, TextColor, Color, Radius } from 'styles/Enums'
 import { PasswordInput, TextInput } from 'Components/Atomic'
 import { emailAndPassSchema, EmailAndPassInputs } from 'Utils/ValidationScheme'
@@ -15,6 +14,7 @@ import { SnackbarContext } from 'Utils/SnackbarContext'
 import { Snackbar } from 'Components/Atomic/Snackbar'
 import { LoadingContext } from 'Utils/LoadingContext'
 import { signInWithEmailAndPassword } from 'Infra/UserSession/SignIn'
+import { useForm } from 'react-hook-form'
 
 const IndexTemplate = (): JSX.Element => {
   /*********************************************/
@@ -185,3 +185,5 @@ const LinkText = styled.a`
 `
 
 export default IndexTemplate
+
+

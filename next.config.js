@@ -5,6 +5,12 @@ const nextConfig = {
   env: {
     LIFF_ID: process.env.LIFF_ID,
   },
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    '/api': 'http://go:8080'
+  },
 }
 
 module.exports = nextConfig

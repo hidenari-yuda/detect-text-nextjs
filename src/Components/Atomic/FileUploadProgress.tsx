@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import CircularProgress, {
   CircularProgressProps,
 } from '@mui/material/CircularProgress'
-import { Box, Typography } from '@mui/material/'
+import { Box, Typography } from '@mui/material'
 import { Color, FontSize } from 'styles/Enums'
 
 function CircularProgressWithLabel(
