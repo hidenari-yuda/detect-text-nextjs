@@ -1,7 +1,6 @@
 import { Snackbar } from 'Components/Atomic'
 import { FileUploadProgress } from 'Components/Atomic/FileUploadProgress'
 import { Loading } from 'Components/Atomic/Loading'
-import Layout from 'Components/Templates/Layout/Layout'
 import { Renderer } from 'Components/Utils/Renderer'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
@@ -32,10 +31,10 @@ export const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           >
             <SnackbarContext.Provider value={useSnackbarContext()}>
               <Renderer>
-                <Layout>
-                  <GlobalStyles />
-                  <Component {...pageProps} />
-                </Layout>
+                {/* <Layout> */}
+                <GlobalStyles />
+                <Component {...pageProps} />
+                {/* </Layout> */}
                 <Snackbar />
                 <FileUploadProgress />
                 <Loading />

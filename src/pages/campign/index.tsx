@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
-import Signin from 'Components/Templates/Signin/Signin'
+import Campaign from 'Components/Templates/Campaign/Campaign'
 
 export const IndexPage: NextPage = () => {
-  return <Signin />
+  return <Campaign />
 }
 
 export default IndexPage

@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
-import Signin from 'Components/Templates/Signin/Signin'
+import Point from 'Components/Templates/Point/Point'
 
 export const IndexPage: NextPage = () => {
-  return <Signin />
+  return <Point />
 }
 
 export default IndexPage

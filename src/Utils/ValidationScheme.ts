@@ -109,3 +109,11 @@ export type UserInputs = {
   email: string
   password: string
 }
+
+export const userSchema: Resolver<UserInputs> = yupResolver(
+  yup.object().shape({
+    name: text.required,
+    email: email.email,
+    password: password.password,
+  })
+)

@@ -4,8 +4,8 @@ type RouteConfig = {
 }
 
 export enum ProtectedRouteType {
+  AdminOnly,
   GuestOnly,
-  UserOnly,
 }
 
 export const routes: RouteConfig[] = [
@@ -17,6 +17,6 @@ export const routes: RouteConfig[] = [
   {
     // トップページ
     path: '/',
-    protected: ProtectedRouteType.UserOnly,
+    protected: ProtectedRouteType.AdminOnly,
   },
 ]

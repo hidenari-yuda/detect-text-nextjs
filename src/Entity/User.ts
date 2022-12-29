@@ -6,19 +6,52 @@ export interface User {
   uuid: string
 
   /** FirebaseID */
-  firebase_id: string
+  firebaseId: string
 
   /** LINEユーザーID */
-  line_user_id: string
+  lineUserId: string
+
+  /** 回答進捗 */
+  questionProgress: number
+
+  /** 都道府県 */
+  prefecture: number
+
+  /** 年齢 */
+  age: number
+
+  /** 性別 */
+  gender: number
+
+  /** 職業 */
+  occupation: number
+
+  /** 業種 */
+  industry: number
+
+  /** 住まい */
+  livingWith: number
+
+  /** 結婚 */
+  marriage: number
+
+  /** 子供 */
+  child: number
+
+  /** 子供の年齢 */
+  childAge: number
+
+  /** 年収 */
+  annualIncome: number
 
   /** LINEユーザー名 */
-  line_name: string
+  lineName: string
 
   /** プロフィール画像URL */
-  picture_url: string
+  pictureUrl: string
 
   /** ステータスメッセージ */
-  status_message: string
+  statusMessage: string
 
   /** 言語 */
   language: string
@@ -34,4 +67,7 @@ export interface User {
 
   /** パスワード */
   password: string
+
+  /** 作成日 */
+  createdAt: string
 }

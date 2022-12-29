@@ -85,10 +85,9 @@ export const AppBarAndDrawer: React.FC<Props> = ({ children }) => {
   // AppBarのリスト
   //
   const appBarList = [
-    { label: '求人管理', link: '#' },
-    { label: '企業管理', link: '/search/enterprise' },
-    { label: '求職者管理', link: '/search/job_seeker' },
-    { label: 'タスク', link: '#' },
+    { label: 'アンケート', link: '/question' },
+    { label: 'アップロード', link: '#' },
+    { label: 'キャンペーン', link: '/campagn' },
   ]
 
   return (
