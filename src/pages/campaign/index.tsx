@@ -1,11 +1,13 @@
 import { NextPage } from 'next'
-import Point from 'Components/Templates/Point/Point'
+import Campaign from 'Components/Templates/Campaign/Campaign'
+import Header from 'Components/Templates/Header/Header'
 import Footer from 'Components/Templates/Footer/Footer'
 
 export const IndexPage: NextPage = () => {
   return (
     <>
-      <Point />
+      {/* <Header /> */}
+      <Campaign currentUser={null} />
       <Footer />
     </>
   )

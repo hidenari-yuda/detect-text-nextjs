@@ -55,61 +55,33 @@ export namespace UserParser {
   }
 
   // POST or PUT
-  // export const toData = (User: User): any => {
-  //   const specialtyEnterpriseTypes = (User.specialtyEnterpriseTypes || []).map(
-  //     (val) => ({ specialty_enterprise_type: val })
-  //   )
+  export const toData = (user: User): any => {
 
-  //   const specialtyIndustries = (User.specialtyIndustries || []).map(
-  //     (val) => ({ specialty_industry: val })
-  //   )
-
-  //   const specialtyOccupations = (User.specialtyOccupations || []).map(
-  //     (val) => ({ specialty_occupation: val })
-  //   )
-
-  //   const specialtyAreas = (User.specialtyAreas || []).map((val) => ({
-  //     specialty_area: val,
-  //   }))
-
-  //   const specialtyAgeGroups = (User.specialtyAgeGroups || []).map((val) => ({
-  //     specialty_age_group: val,
-  //   }))
-
-  //   const specialtyJobSeekerTypes = (User.specialtyJobSeekerTypes || []).map(
-  //     (val) => ({ specialty_job_seeker_type: val })
-  //   )
-
-  //   const allianceNeeds = (User.allianceNeeds || []).map((val) => ({
-  //     alliance_need: val,
-  //   }))
-
-  //   return {
-  //     User_name: User.UserName,
-  //     office_location: User.officeLocation,
-  //     representative: User.representative,
-  //     establish: User.establish,
-  //     corporate_site_url: User.corporateSiteUrl,
-  //     permission_code: User.permissionCode,
-  //     permission_year: User.permissionYear,
-  //     workers_count: User.workersCount,
-  //     recruiting_alliance: User.recruitingAlliance,
-  //     contact_information: User.contactInformation,
-  //     // phone_number: User.phoneNumber,
-  //     open_job_to_applicant: User.openJobToApplicant,
-  //     job_to_applicant: User.jobToApplicant,
-  //     specialty_enterpriseTypes: specialtyEnterpriseTypes,
-  //     specialty_industries: specialtyIndustries,
-  //     specialty_occupations: specialtyOccupations,
-  //     specialty_areas: specialtyAreas,
-  //     specialty_overseas_area: User.specialtyOverseasArea,
-  //     yearly_registrant: User.yearlyRegistrant,
-  //     monthly_registrant: User.monthlyRegistrant,
-  //     yearly_employed: User.yearlyEmployed,
-  //     specialty_age_groups: specialtyAgeGroups,
-  //     specialty_job_seeker_types: specialtyJobSeekerTypes,
-  //     User_alliance_needs: allianceNeeds,
-  //     pr_point: User.prPoint,
-  //   }
-  // }
+    return {
+      id: user.id,
+      uuid: user.uuid,
+      name: user.name,
+      email: user.email,
+      firebase_id: user.firebaseId,
+      line_user_id: user.lineUserId,
+      question_progress: user.questionProgress,
+      prefecture: user.prefecture,
+      age: user.age,
+      gender: user.gender,
+      occupation: user.occupation,
+      industry: user.industry,
+      living_with: user.livingWith,
+      marriage: user.marriage,
+      child: user.child,
+      child_age: user.childAge,
+      annual_income: user.annualIncome,
+      point: user.point,
+      line_name: user.lineName,
+      picture_url: user.pictureUrl,
+      status_message: user.statusMessage,
+      language: user.language,
+      password: user.password,
+      created_at: user.createdAt,
+    }
+  }
 }

@@ -19,4 +19,14 @@ export const routes: RouteConfig[] = [
     path: '/',
     protected: ProtectedRouteType.AdminOnly,
   },
+  {
+    // トップページ
+    path: '/campaign',
+    protected: ProtectedRouteType.AdminOnly,
+  },
+  {
+    // トップページ
+    path: '/point',
+    protected: ProtectedRouteType.AdminOnly,
+  },
 ]
